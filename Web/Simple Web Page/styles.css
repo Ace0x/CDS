@@ -1,0 +1,53 @@
+body{
+    font-family: Roboto;
+}
+
+.Navb {
+    background-color: #25404B;
+    height: 5em;
+}
+.Navb a {
+    position: relative;
+    right: 13em;
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    top: 1em;
+}
+.Banner {
+    color: white;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: #B97D2D;
+    
+}
+
+.Sub {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #25404B;
+    color: white;
+}
+
+
+.Logos {
+    position:relative;
+    height: 20em;
+    right: auto;
+    text-align: center;
+    padding-top: 5%;
+    
+}  
+
+.Footr {
+    color: white;
+    background-color: #25404B;
+    height: 4em;
+    text-align: center;
+    padding-top: 2em;
+}
+
