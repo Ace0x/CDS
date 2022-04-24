@@ -52,8 +52,26 @@ function changeContent(){
 }
 
 function removeColor(){
+    const color = document.getElementById('removeC').value
     const select = document.getElementById('colorSelect')
-    select.remove(option)
+    for(let i = 0; i < select.length; i++){
+        if(select.options[i].value == color){
+            select.remove(i)
+        }
+    }
+}
+function addColor(){
+    const color = document.getElementById('addC').value
+    const select = document.getElementById('colorSelect')
+    select.add(new Option(color))
+}
+function catSize(){
+    const r1 = Math.floor(Math.random() * 600) + 300;
+    const r2 = Math.floor(Math.random() * 600) + 300;
+    document.getElementById('cat').style.width = `${r1}px`
+    document.getElementById('cat').style.height = `${r2}px`
+
+
 }
 //Register the event
 document.addEventListener('mousemove', mouseMovement)
