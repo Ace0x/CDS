@@ -66,11 +66,13 @@ function addColor(){
     select.add(new Option(color))
 }
 function catSize(){
-    const r1 = Math.floor(Math.random() * 600) + 300;
-    const r2 = Math.floor(Math.random() * 600) + 300;
-    document.getElementById('cat').style.width = `${r1}px`
-    document.getElementById('cat').style.height = `${r2}px`
-
+    let cat = document.getElementById('cat')
+    const r1 = (Math.floor(Math.random() * 8) + 3) * 100
+    const r2 = (Math.floor(Math.random() * 8) + 3) * 100
+    cat.src = `http://placekitten.com/${r1}/${r2}`
+    cat.style.width = `${r1}px`
+    cat.style.height = `${r2}px`
+    cat.addEventListener('mousemove', catSize)
 
 }
 //Register the event
