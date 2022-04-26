@@ -1,8 +1,15 @@
+.box {
+    display: flex;
+    height: 100%;
+}
 .grd {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
     background-color: brown;
+    width: 100%;
+    height: 100%;
     
 }
 .one {
@@ -14,7 +21,23 @@
 }
 
 .three {
-    background-color: aquamarine;
+    background-color:aliceblue;
+}
+.four{
+    background-color: blueviolet;
+}
+.five{
+    background-color: chartreuse;
+}
+.six {
+    background-color: cyan;
+}
+body {
+    height: 100%;
+    background-color: black;
 }
 
+html {
+    height: 100%;
+}
 
