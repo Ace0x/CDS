@@ -9,17 +9,22 @@
     
      ;
     grid-template-rows: repeat(2,1fr);
-    background-color: brown;
+    background-color: beige;
     width: 100%;
     height: 100%;
     
 }
 .one {
     background-color: bisque;
+    grid-column: 1/3;
+    
     
 }
 .two {
     background-color: aquamarine;
+    grid-row: 1/3; 
+    grid-column: 3/4;
+    
 }
 
 .three {
@@ -28,12 +33,8 @@
 .four{
     background-color: blueviolet;
 }
-.five{
-    background-color: chartreuse;
-}
-.six {
-    background-color: cyan;
-}
+
+
 body {
     height: 100%;
     background-color: black;
