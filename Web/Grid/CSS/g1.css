@@ -12,26 +12,7 @@
     height: 100%;
     
 }
-.one {
-    background-color: bisque;
-    
-}
-.two {
-    background-color: aquamarine;
-}
 
-.three {
-    background-color:aliceblue;
-}
-.four{
-    background-color: blueviolet;
-}
-.five{
-    background-color: chartreuse;
-}
-.six {
-    background-color: cyan;
-}
 body {
     height: 100%;
     background-color: black;
@@ -40,4 +21,6 @@ body {
 html {
     height: 100%;
 }
+
+
 

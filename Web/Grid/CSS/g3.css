@@ -13,28 +13,28 @@
     
 }
 .one {
-    background-color: bisque;
+   
     grid-column: 1/5;
 }
 .two {
-    background-color: aquamarine;
+    
     grid-row: 2/4; 
 }
 
 .three {
-    background-color:aliceblue;
+    
     grid-row: 2/4;
     grid-column: 2/5;
 }
 .four{
-    background-color: blueviolet;
+    
     grid-column: 1/5;
 }
 
 
 body {
     height: 100%;
-    background-color: black;
+  
 }
 
 html {

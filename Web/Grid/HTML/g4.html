@@ -10,12 +10,31 @@
 <body>
     <div class="box">
         <div class="grd">
-            <div class="one">1</div>
-            <div class="two">2</div>
-            <div class="three">3</div>
-            <div class="four">4</div>
-            <div class="five">5</div>
+            <div class="one random">1</div>
+            <div class="two random">2</div>
+            <div class="three random">3</div>
+            <div class="four random">4</div>
+            <div class="five random">5</div>
         </div>
     </div>
 </body>
+<script defer>
+    function random_colors() {
+        let r = Math.trunc(Math.random() * 255) 
+        let g = Math.trunc(Math.random() * 255)  
+        let b = Math.trunc(Math.random() * 255)   
+        return [r, g, b]
+    }
+
+    function select(){
+        const x = document.querySelectorAll('.random')
+        x.forEach(divs => divs.style.backgroundColor = 
+        'rgb(' + random_colors()[0] 
+        + ',' + random_colors()[1] 
+        + ',' + random_colors()[2] + ')')
+    }
+
+    select()
+
+</script>
 </html>
