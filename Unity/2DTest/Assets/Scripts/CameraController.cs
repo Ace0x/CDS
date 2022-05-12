@@ -13,10 +13,11 @@ public class CameraController : MonoBehaviour
         ref velocity,speed * Time.deltaTime);
     }
 
-    public void NewRoom(Transform _newRoom)
+    public void MoveNewRoom(Transform newRoom)
     {
-        currentPositionX = _newRoom.position.x;
+        currentPositionX = newRoom.position.x;
 
     }
+
 }
 
