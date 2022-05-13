@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour
 {
-    public static int scoreV  = 1;
+    public static int scoreV  = 0;
     Text score;
 
     private void Start()

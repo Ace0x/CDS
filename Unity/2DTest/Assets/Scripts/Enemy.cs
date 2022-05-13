@@ -2,11 +2,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private BoxCollider2D boxCollider;
-    [SerializeField] private LayerMask playerLayer;
-    [SerializeField] private float range;
-    [SerializeField] private float colliderDistance;
-    private void OnTriggerEnter2D(Collider collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
@@ -16,6 +12,7 @@ public class Enemy : MonoBehaviour
         }
 
     }
+    
 
     
 }
