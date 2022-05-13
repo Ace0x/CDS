@@ -4,7 +4,7 @@ public class Door : MonoBehaviour
 {
     [SerializeField] private Transform prevRoom;
     [SerializeField] private Transform nextRoom;
-    [SerializeField] private CameraController cam;
+    private CameraController cam;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,9 +12,14 @@ public class Door : MonoBehaviour
         {
             if(collision.transform.position.x < transform.position.x)
                 cam.MoveNewRoom(nextRoom);
+            
             else
                 cam.MoveNewRoom(prevRoom);
         }
     }
-
+    private void Awake()
+    {
+        cam = Camera.main.GetComponent<CameraController>();
+    }
+   
 }

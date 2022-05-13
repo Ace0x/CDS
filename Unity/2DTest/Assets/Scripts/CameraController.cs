@@ -5,12 +5,17 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float speed;
     private float currentPositionX;
     private Vector3 velocity = Vector3.zero;
+
+    [SerializeField] private Transform player;
+    [SerializeField] private float distanceAhead;
+    [SerializeField] private float camSpeed;
+    private float lookAhead;
     
     private void Update()
     {
-        transform.position = Vector3.SmoothDamp(transform.position, 
-        new Vector3(currentPositionX, transform.position.y, transform.position.z),
-        ref velocity,speed * Time.deltaTime);
+        
+        transform.position = new Vector3(player.position.x + lookAhead,transform.position.y,transform.position.z);
+        lookAhead = Mathf.Lerp(lookAhead, (distanceAhead * player.localScale.x), Time.deltaTime * camSpeed);
     }
 
     public void MoveNewRoom(Transform newRoom)
