@@ -14908,7 +14908,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2089704666}
-  - component: {fileID: 2089704667}
   m_Layer: 0
   m_Name: EnemyPatrol (2)
   m_TagString: Untagged
@@ -14931,23 +14930,6 @@ Transform:
   m_Father: {fileID: 1225398310}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2089704667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089704665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3fd6e7bbec0cd842a3b7419066957d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lEdge: {fileID: 0}
-  rEdge: {fileID: 0}
-  enemy: {fileID: 912608111}
-  speed: 2
-  anim: {fileID: 912608114}
 --- !u!1 &2101117855
 GameObject:
   m_ObjectHideFlags: 0

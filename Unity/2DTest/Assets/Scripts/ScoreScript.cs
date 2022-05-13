@@ -1,5 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+/*
+Andrew Dunkerley, Emiliano Cabrera
+updates the text object that shows the score
+*/
 using UnityEngine;
 using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour

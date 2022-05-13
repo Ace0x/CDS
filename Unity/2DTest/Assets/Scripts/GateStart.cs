@@ -1,3 +1,8 @@
+/*
+Andrew Dunkerley, Emiliano Cabrera
+Resets the fruits placed on the map when the trophy on the other side is collected it also spawns a trophy on the side opposite to the player's current location
+this one doesn't spawn on game Start
+*/
 using UnityEngine;
 
 public class GateStart : MonoBehaviour

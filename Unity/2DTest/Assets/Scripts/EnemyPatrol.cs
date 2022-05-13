@@ -1,3 +1,8 @@
+/*
+Andrew Dunkerley, Emiliano Cabrera
+Makes the enemies patrol an are based on two waypoints it also starts the enemy running animation
+*/
+
 using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour

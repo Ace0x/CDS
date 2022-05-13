@@ -1,5 +1,8 @@
 using UnityEngine;
-
+/*
+Andrew Dunkerley, Emiliano Cabrera
+Handles player camera movement by following the player and looking a small distance ahead in either direction
+*/
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private float speed;

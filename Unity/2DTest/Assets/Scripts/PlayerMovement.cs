@@ -1,3 +1,7 @@
+/*
+Andrew Dunkerley, Emiliano Cabrera
+Handles all player movement including jumping it also starts the running animations
+*/
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
